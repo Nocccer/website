@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/website/static/js/main.173bd2b5.chunk.js",
-    "main.js.map": "/website/static/js/main.173bd2b5.chunk.js.map",
-    "runtime-main.js": "/website/static/js/runtime-main.60675b03.js",
-    "runtime-main.js.map": "/website/static/js/runtime-main.60675b03.js.map",
-    "static/js/2.47d628c7.chunk.js": "/website/static/js/2.47d628c7.chunk.js",
-    "static/js/2.47d628c7.chunk.js.map": "/website/static/js/2.47d628c7.chunk.js.map",
-    "static/js/3.b4a6a797.chunk.js": "/website/static/js/3.b4a6a797.chunk.js",
-    "static/js/3.b4a6a797.chunk.js.map": "/website/static/js/3.b4a6a797.chunk.js.map",
+    "main.css": "/website/static/css/main.fc127dbf.chunk.css",
+    "main.js": "/website/static/js/main.72269a2d.chunk.js",
+    "main.js.map": "/website/static/js/main.72269a2d.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.3733a6f2.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.3733a6f2.js.map",
+    "static/js/2.5f2bff15.chunk.js": "/website/static/js/2.5f2bff15.chunk.js",
+    "static/js/2.5f2bff15.chunk.js.map": "/website/static/js/2.5f2bff15.chunk.js.map",
+    "static/js/3.7b42033b.chunk.js": "/website/static/js/3.7b42033b.chunk.js",
+    "static/js/3.7b42033b.chunk.js.map": "/website/static/js/3.7b42033b.chunk.js.map",
     "index.html": "/website/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/website/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.47d628c7.chunk.js.LICENSE.txt": "/website/static/js/2.47d628c7.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/website/static/media/logo.6ce24c58.svg"
+    "static/css/main.fc127dbf.chunk.css.map": "/website/static/css/main.fc127dbf.chunk.css.map",
+    "static/js/2.5f2bff15.chunk.js.LICENSE.txt": "/website/static/js/2.5f2bff15.chunk.js.LICENSE.txt",
+    "static/media/Navigation.css": "/website/static/media/back.44d5c0bf.png",
+    "static/media/bandcamp.d4d6f2cf.png": "/website/static/media/bandcamp.d4d6f2cf.png",
+    "static/media/facebook.71e0894b.png": "/website/static/media/facebook.71e0894b.png",
+    "static/media/instagram.307ae907.png": "/website/static/media/instagram.307ae907.png",
+    "static/media/spotify.608e696b.png": "/website/static/media/spotify.608e696b.png",
+    "static/media/youtube.858d9b0e.png": "/website/static/media/youtube.858d9b0e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.60675b03.js",
-    "static/js/2.47d628c7.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.173bd2b5.chunk.js"
+    "static/js/runtime-main.3733a6f2.js",
+    "static/js/2.5f2bff15.chunk.js",
+    "static/css/main.fc127dbf.chunk.css",
+    "static/js/main.72269a2d.chunk.js"
   ]
 }
