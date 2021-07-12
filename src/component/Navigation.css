@@ -1,0 +1,27 @@
+.navbar {
+    background-image: url('../images/back.png');
+}
+
+.social-media {
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.social-media:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #B15238);
+    transition: 0.2s;
+}
+
+.navbar-entry:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.navbar-entry:hover {
+    color: #B15238;
+    opacity: 0.8;
+    transition: 0.4s;
+    border-bottom: solid 1px #B15238;
+}
