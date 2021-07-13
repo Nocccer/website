@@ -12,7 +12,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 function App() {
   return (        
     <div className="app"> 
-      <Router basename="/">
+      <Router basename={process.env.PUBLIC_URL}>
         <Navigation/>
         <Switch>
           <Route path='/music' component={Music}/>                 
