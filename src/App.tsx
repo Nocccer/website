@@ -6,7 +6,7 @@ import { Home } from './screens/Home';
 import { Band } from './screens/Band';
 import { Music } from './screens/Music';
 import { Navigation } from './component/Navigation';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom';
 
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Navigation/>
         <Switch>
-          <Route path='/music' component={Music}/>                 
-          <Route path='/band' component={Band}/>  
-          <Route path='/' component={Home}/>                         
+          <Route exact path='/' component={Home}/> 
+          <Route path='/band' component={Band}/>   
+          <Route path='/music' component={Music}/>                     
         </Switch>
       </Router>
     </div>

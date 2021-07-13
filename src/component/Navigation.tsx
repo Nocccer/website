@@ -13,7 +13,7 @@ export function Navigation() {
         <>
             <Navbar className="navbar" collapseOnSelect fixed='top' expand='lg' bg='dark' variant='dark'>
                 <Container>
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand href={process.env.PUBLIC_URL + "/#/"}>
                         <img
                             src={isolate}
                             className="logo"
@@ -24,12 +24,12 @@ export function Navigation() {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='navigation' className="menu-entry" role="navigation">
-                        <Nav.Link href='/' className="navbar-entry">Home</Nav.Link>
-                        <Nav.Link href='/band' className="navbar-entry">Band</Nav.Link>
-                        <Nav.Link href='/music' className="navbar-entry">Music</Nav.Link>
-                        <Nav.Link href='/videos' className="navbar-entry">Videos</Nav.Link>
-                        <Nav.Link href='/dates' className="navbar-entry">Dates</Nav.Link>
-                        <Nav.Link href='/contact' className="navbar-entry">Contact</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/"} className="navbar-entry">Home</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/band"} className="navbar-entry">Band</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/music"} className="navbar-entry">Music</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/videos"} className="navbar-entry">Videos</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/dates"} className="navbar-entry">Dates</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/contact"} className="navbar-entry">Contact</Nav.Link>
                     </Navbar.Collapse>
                     <Navbar.Collapse>
                         <Nav.Link href='https://www.instagram.com/isolate.band/' >                        
