@@ -1,0 +1,53 @@
+.card-title {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.release-card {
+    background-color: transparent;
+    width: 18rem;
+}
+
+.release-card-body {
+    text-align: center;
+}
+
+.release-card-image {
+    transition: 0.4s;
+    transform: scale(1);
+}
+
+.release-card-image:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.release-card-toogle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.release-card-toogle:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.release-card-stream,
+.release-card-stream:focus {
+    background-color: transparent;
+    border: solid 2px #eae7d9;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    text-decoration: none;
+}
+
+.release-card-stream:hover {
+    background-color: transparent;
+    border: solid 2px #eae7d9;
+    opacity: 1;
+    transition: 0.2s;
+}
+

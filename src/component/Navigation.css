@@ -2,26 +2,48 @@
     background-image: url('../images/back.png');
 }
 
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.navbar > .container, 
+.navbar > .container-fluid, 
+.navbar > .container-sm, 
+.navbar > .container-md, 
+.navbar > .container-lg, 
+.navbar > .container-xl, 
+.navbar > .container-xxl {
+    align-items: flex-end;
+}
+
+.logo {
+    transition: 0.2s;
+}
+
+.logo:hover {
+    filter: invert(50%) sepia(400%) hue-rotate(335deg); 
+    transition: 0.2s;
+}
+
 .social-media {
     width: 25px;
     height: 25px;
-    opacity: 1;
     transition: 0.2s;
 }
 
 .social-media:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 #B15238);
+    filter: brightness(1.45); 
     transition: 0.2s;
 }
 
-.navbar-entry:hover {
+.navbar-entry {
     opacity: 1;
     transition: 0.4s;
 }
 
 .navbar-entry:hover {
-    color: #B15238;
+    color: #ebb3a3;
     opacity: 0.8;
     transition: 0.4s;
-    border-bottom: solid 1px #B15238;
+    border-bottom: solid 1px #ebb3a3;
 }

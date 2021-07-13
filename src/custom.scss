@@ -1,10 +1,23 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
+@font-face {
+    font-family: 'SpartanMB-Regular';
+    src: url('fonts/SpartanMB-Regular.eot');
+    src: url('fonts/SpartanMB-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/SpartanMB-Regular.svg#SpartanMB-Regular') format('svg'),
+         url('fonts/SpartanMB-Regular.ttf') format('truetype'),
+         url('fonts/SpartanMB-Regular.woff') format('woff'),
+         url('fonts/SpartanMB-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 html body {
     background: url('./images/back.png');
-
+    font-family: "SpartanMB-Regular";
+    color: #eae7d9;
 }
 
 .nav-link {
-    color: white;
+    color: #eae7d9;
 }

@@ -1,0 +1,12 @@
+.home-release {
+    width: 50%;
+    height: 50%;
+    transition: 1s;
+    transform: scale(1);
+}
+
+.home-release:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
