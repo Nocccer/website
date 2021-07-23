@@ -1,15 +1,24 @@
+.card-body {
+  text-align: center;
+  font-style: italic;
+  padding: 0px;
+}
+
 .card-title {
+  margin-bottom: 15px;
   text-align: center;
   margin-top: 15px;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 .release-card {
   background-color: transparent;
   width: 18rem;
-}
-
-.release-card-body {
-  text-align: center;
 }
 
 .release-card-image {
