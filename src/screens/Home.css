@@ -1,12 +1,33 @@
 .home-release {
-    width: 50%;
-    height: 50%;
-    transition: 1s;
-    transform: scale(1);
+    width: 25%;
+    height: 25%;
 }
 
-.home-release:hover {
-    transition: 1s;
-    transform: scale(1.1);
-    cursor: pointer;
+.home-card-stream-buy,
+.home-card-stream-buy:focus {
+  background-color: transparent;
+  border: solid 2px #eae7d9;
+  opacity: 0.8;
+  transition: 0.2s;
+  display: block;
+  text-decoration: none;
+  margin: 0 5px 5px 5px;
+  color: #eae7d9;
+  font-style: normal;
 }
+
+.home-card-stream-buy:hover {
+  background-color: transparent;
+  border: solid 2px #ebb3a3;
+  opacity: 1;
+  transition: 0.2s;
+  color: #ebb3a3;
+}
+
+.home-card-canvas-h2 {
+    background-color: transparent;
+    text-align: center;
+    font-family: "SpartanMB-Regular";
+    font-weight: bold;
+    font-style: normal;
+  }
