@@ -32,7 +32,7 @@ export const releases: ReleaseConf[] =
                     link: "https://open.spotify.com/album/7jwqAfros0bEZeOwUiKw92?si=CuJq5s2yTMSO5aDzsGwlgw&dl_branch=1"
                 },
                 {
-                    name: "apple-music",
+                    name: "apple",
                     link: "https://music.apple.com/de/album/topology-ep/1576168990"
                 },
                 {
@@ -48,7 +48,7 @@ export const releases: ReleaseConf[] =
                     link: "https://de.napster.com/artist/isolate-2/album/topology"
                 },
                 {
-                    name: "youtube-music",
+                    name: "youtube",
                     link: "https://music.youtube.com/playlist?list=OLAK5uy_lN7NoulJcnST4b_5d6N77GUCD9m3az3jk&feature=share"
                 }
             ],
@@ -78,7 +78,7 @@ export const releases: ReleaseConf[] =
                     link: "https://open.spotify.com/track/1KOkrS3KZG8cjEwgMsaf4U?si=02d7780a021b4856"
                 },
                 {
-                    name: "apple-music",
+                    name: "apple",
                     link: "https://music.apple.com/de/album/quarry/1576164765?i=1576164766"
                 },
                 {
@@ -94,7 +94,7 @@ export const releases: ReleaseConf[] =
                     link: "https://de.napster.com/artist/isolate-2/album/quarry"
                 },
                 {
-                    name: "youtube-music",
+                    name: "youtube",
                     link: "https://music.youtube.com/watch?v=oYdBbFZLizE&feature=share"
                 }
             ],
@@ -124,7 +124,7 @@ export const releases: ReleaseConf[] =
                     link: "https://open.spotify.com/track/1XzT7BqzyYprRfI3Jsp7lj?si=4466303090544536"
                 },
                 {
-                    name: "apple-music",
+                    name: "apple",
                     link: "https://music.apple.com/de/album/disconnect-connect/1514103010?i=1514103011"
                 },
                 {
@@ -144,7 +144,7 @@ export const releases: ReleaseConf[] =
                     link: "https://de.napster.com/artist/isolate-2/album/disconnect-connect"
                 },
                 {
-                    name: "youtube-music",
+                    name: "youtube",
                     link: "https://music.youtube.com/playlist?list=OLAK5uy_keYVvXC9MlLfgVjDq3Ouv1Lo9l38n9Weo&feature=share"
                 }
             ],
@@ -174,7 +174,7 @@ export const releases: ReleaseConf[] =
                     link: "https://open.spotify.com/album/1VBgVVUayDGv74i6Z6DIZH?si=GqDvtRdwQzauQC3DsWBUqg&dl_branch=1"
                 },
                 {
-                    name: "apple-music",
+                    name: "apple",
                     link: "https://music.apple.com/de/album/1445991586"
                 },
                 {
@@ -194,7 +194,7 @@ export const releases: ReleaseConf[] =
                     link: "https://de.napster.com/artist/isolate-2/album/a-340014706"
                 },
                 {
-                    name: "youtube-music",
+                    name: "youtube",
                     link: "https://music.youtube.com/playlist?list=OLAK5uy_k3sZZwTAOviJe4wLhINwZ6ecOI-Oz4sAU"
                 }
             ],
@@ -224,7 +224,7 @@ export const releases: ReleaseConf[] =
                     link: "https://open.spotify.com/track/40mCD8johnpmJc6o8PJtEa?si=b2a8f2f1f8904b0b"
                 },
                 {
-                    name: "apple-music",
+                    name: "apple",
                     link: "https://music.apple.com/de/album/asleep/1445988306?i=1445988308"
                 },
                 {
@@ -244,7 +244,7 @@ export const releases: ReleaseConf[] =
                     link: "https://de.napster.com/artist/isolate-2/album/asleep-340015428"
                 },
                 {
-                    name: "youtube-music",
+                    name: "youtube",
                     link: "https://music.youtube.com/watch?v=DSOInUOLJ0M&feature=share"
                 }
             ],
