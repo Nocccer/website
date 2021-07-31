@@ -7,8 +7,10 @@ import { Band } from './screens/Band';
 import { Music } from './screens/Music';
 import { Videos } from './screens/Videos';
 import { Dates } from './screens/Dates';
+import { Contact } from './screens/Contact';
 import { Navigation } from './component/Navigation';
 import { HashRouter as Router} from 'react-router-dom';
+
 
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
           <Route path='/band' component={Band}/>   
           <Route path='/music' component={Music}/>
           <Route path='/videos' component={Videos}/>
-          <Route path='/dates' component={Dates}/>                          
+          <Route path='/dates' component={Dates}/>
+          <Route path='/contact' component={Contact}/>                          
         </Switch>
       </Router>
     </div>

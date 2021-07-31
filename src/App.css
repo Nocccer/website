@@ -1,3 +1,12 @@
 .app {
     margin-top: 150px;
 }
+
+.url-link {
+    color:#eae7d9;
+    text-decoration: none;
+}
+
+.url-link:hover {
+    color:#ebb3a3;
+}

@@ -8,7 +8,6 @@ export function Home() {
         <>
             <Container>
                 <Row className="justify-content-lg-center">
-                    <h2 className="home-card-canvas-h2">Last Release</h2>
                     <Card className="release-card">
                         <Card.Img variant="top" src={releases[0].picture} />
                         <Card.Title>{releases[0].name}</Card.Title>

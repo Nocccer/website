@@ -8,7 +8,7 @@ interface DateConf {
 
 export const dates: DateConf[] = [
     {
-        date: "07/26/2021", 
+        date: "08/01/2021", 
         venue: "Test", 
         location: "Test", 
         description: "with Test",

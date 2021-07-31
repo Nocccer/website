@@ -1,3 +1,4 @@
+import topology from '../images/topology.jpg';
 import quarry from '../images/quarry.jpg';
 import disconnect_connect from '../images/disconnect_connect.jpg';
 import a from '../images/a.jpg';
@@ -20,6 +21,52 @@ export interface ReleaseConf {
 
 export const releases: ReleaseConf[] =
     [
+        {
+            name: "Topology",
+            picture: topology,
+            date: "07/30/2021",
+            description: "ep",
+            streams: [
+                {
+                    name: "spotify",
+                    link: "https://open.spotify.com/album/7jwqAfros0bEZeOwUiKw92?si=CuJq5s2yTMSO5aDzsGwlgw&dl_branch=1"
+                },
+                {
+                    name: "apple-music",
+                    link: "https://music.apple.com/de/album/topology-ep/1576168990"
+                },
+                {
+                    name: "deezer",
+                    link: "https://deezer.page.link/itoaceDS5cqT99dA8"
+                },
+                {
+                    name: "tidal",
+                    link: "https://tidal.com/browse/album/190655143"
+                },
+                {
+                    name: "napster",
+                    link: "https://de.napster.com/artist/isolate-2/album/topology"
+                },
+                {
+                    name: "youtube-music",
+                    link: "https://music.youtube.com/playlist?list=OLAK5uy_lN7NoulJcnST4b_5d6N77GUCD9m3az3jk&feature=share"
+                }
+            ],
+            buys: [
+                {
+                    name: "bandcamp",
+                    link: "https://weareisolate.bandcamp.com/album/topology"
+                },
+                {
+                    name: "itunes",
+                    link: "https://itunes.apple.com/album/topology-ep/1576168990?app=itunes&ls=1&at=11lPP6"
+                },
+                {
+                    name: "amazon",
+                    link: "https://www.amazon.de/gp/product/B0996GL78V/ref=dm_ws_sp_ps_dp"
+                }
+            ]
+        },
         {
             name: "Quarry",
             picture: quarry,

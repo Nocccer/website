@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
 import { dates } from '../data/Dates';
 import './Dates.css';
 
 export function Dates() {
-    const [time, setTime] = useState(new Date());
-
-    useEffect(() => {
-        const interval = setInterval(() => setTime(new Date()), 1000);
-        return () => {
-            clearInterval(interval);
-        };
-    }, [time]);
+    const time = new Date();
 
     return (
         <>
@@ -23,7 +16,7 @@ export function Dates() {
                     {
                         let tmp_date = <div className="date-div"> {date.date} <b> {date.venue} </b>, {date.location} <i> {date.description} </i></div>;
                         if (date.link?.length !== 0)
-                            return (<a className="date-link" href={date.link}>{tmp_date}</a>);
+                            return (<a className="url-link" href={date.link}>{tmp_date}</a>);
                         else
                             return tmp_date;
                     }
