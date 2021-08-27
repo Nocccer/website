@@ -11,7 +11,7 @@ export function Dates() {
             <Container className="date-container">
                 <h2>dates</h2>
                 {dates.map((date) => {
-                    const current_time = [time.getMonth(), time.getDate(), time.getFullYear()].join('/');
+                    const current_time = [time.getMonth() + 1, time.getDate(), time.getFullYear()].join('/');
                     if (checkDate(date.date, current_time))
                     {
                         let tmp_date = <div className="date-div"> {date.date} <b> {date.venue} </b>, {date.location} <i> {date.description} </i></div>;
@@ -27,7 +27,7 @@ export function Dates() {
                 })}
                 <h2>past concerts</h2>
                 {dates.map((date) => {
-                    const current_time = [time.getMonth(), time.getDate(), time.getFullYear()].join('/');
+                    const current_time = [time.getMonth() + 1, time.getDate(), time.getFullYear()].join('/');
                     if (!checkDate(date.date, current_time))
                         return <div className="date-div"> {date.date} <b> {date.venue} </b>, {date.location} <i> {date.description} </i></div>;
                     else

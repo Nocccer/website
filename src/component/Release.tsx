@@ -14,7 +14,7 @@ export function Release({
 ) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
-    const toggleShow = () => setShow(!show);
+    const toggleShow = () => setShow((s) => !s);
 
     return (
         <>
@@ -29,14 +29,14 @@ export function Release({
                 </Card.Body>
             </Card>
 
-            <Offcanvas show={show} placement="end" onHide={handleClose} backdrop={true} scroll>
-                {streams.length !== 0 && <Offcanvas.Title as="h2" className="release-card-canvas-h2">Stream</Offcanvas.Title>}
+            <Offcanvas show={show} placement="end" onHide={handleClose} backdrop={true} scroll={true}>
+                {streams.length !== 0 && <Offcanvas.Title as="h2" bsPrefix="streams_" className="release-card-canvas-h2">Stream</Offcanvas.Title>}
                 {streams.map((stream) => (
                     <Button variant="primary" size="lg" href={stream.link} className="release-card-stream-buy">
                         {stream.name}
                     </Button>
                 ))}
-                {buys.length !== 0 && <Offcanvas.Title as="h2" className="release-card-canvas-h2">Buy</Offcanvas.Title>}
+                {buys.length !== 0 && <Offcanvas.Title as="h2" bsPrefix="buy_" className="release-card-canvas-h2">Buy</Offcanvas.Title>}
                 {buys.map((buy) => (
                     <Button variant="primary" size="lg" href={buy.link} className="release-card-stream-buy">
                         {buy.name}

@@ -8,13 +8,6 @@ interface DateConf {
 
 export const dates: DateConf[] = [
     {
-        date: "08/01/2021", 
-        venue: "Test", 
-        location: "Test", 
-        description: "with Test",
-        link: "https://www.weareisolate.com"
-    },
-    {
         date: "12/04/2019", 
         venue: "GrooveStation", 
         location: "Dresden", 
