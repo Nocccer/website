@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Offcanvas, Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import './Release.css';
 import { ReleaseConf } from '../data/Releases';
+import { OffCanvas } from './OffCanvas';
 
 export function Release({
     name,
@@ -29,20 +30,7 @@ export function Release({
                 </Card.Body>
             </Card>
 
-            <Offcanvas show={show} placement="end" onHide={handleClose} backdrop={true} scroll={true}>
-                {streams.length !== 0 && <Offcanvas.Title as="h2" bsPrefix="streams_" className="release-card-canvas-h2">Stream</Offcanvas.Title>}
-                {streams.map((stream) => (
-                    <Button variant="primary" size="lg" href={stream.link} className="release-card-stream-buy">
-                        {stream.name}
-                    </Button>
-                ))}
-                {buys.length !== 0 && <Offcanvas.Title as="h2" bsPrefix="buy_" className="release-card-canvas-h2">Buy</Offcanvas.Title>}
-                {buys.map((buy) => (
-                    <Button variant="primary" size="lg" href={buy.link} className="release-card-stream-buy">
-                        {buy.name}
-                    </Button>
-                ))}
-            </Offcanvas>
+            <OffCanvas show={show} streams={streams} buys={buys} closeFunction={handleClose}/>
         </>
     );
 }

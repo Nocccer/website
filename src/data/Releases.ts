@@ -5,7 +5,7 @@ import a from '../images/a.jpg';
 import asleep from '../images/asleep.jpg';
 import bonsai from '../images/bonsai.jpg';
 
-interface LinkConf {
+export interface LinkConf {
     name: string;
     link: string;
 }
