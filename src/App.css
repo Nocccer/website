@@ -3,10 +3,12 @@
 }
 
 .url-link {
-    color:#eae7d9;
+    color: #dc8840;
     text-decoration: none;
 }
 
 .url-link:hover {
-    color:#ebb3a3;
+    opacity: 1.0;
+    color: #dc8840;
+    text-decoration: underline #dc8840;
 }

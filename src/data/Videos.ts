@@ -22,8 +22,7 @@ export const videos: VideosConf = {
     cooperation: [
         {
             title: "Disconnect / Connect",
-            link: "https://www.youtube.com/embed/OpkBGzpaCRw"
+            link: "https://player.vimeo.com/video/399913148?h=1da1210df8"
         }
     ]
 }
-

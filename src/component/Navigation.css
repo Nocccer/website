@@ -21,7 +21,7 @@
 }
 
 .logo:hover {
-    filter: invert(50%) sepia(400%) hue-rotate(335deg); 
+    filter: invert(25%) sepia(7%) saturate(5831%) hue-rotate(328deg) brightness(89%) contrast(93%);
     transition: 0.2s;
 }
 
@@ -41,8 +41,11 @@
     transition: 0.4s;
 }
 
+.navbar-entry:focus {
+    color: #37921d;
+}
+
 .navbar-entry:hover {
-    color: #ebb3a3;
-    opacity: 0.8;
-    transition: 0.4s;
+    color: #dc8840;
+    transition: 0.5s;
 }

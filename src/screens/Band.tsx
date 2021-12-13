@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import band1 from '../images/band1.png'
+import band1 from '../images/band1.jpg'
 import band2 from '../images/band2.jpg'
+import band3 from '../images/band3.jpg'
 import './Band.css'
 
 export function Band(){
@@ -24,6 +25,13 @@ export function Band(){
                             vocals. Since then, their musical style has grown to a modern kind of multifaceted progressive Pop, 
                             while still retaining heavier elements. 
                         </p>
+                    </div>
+                </Row>
+                <Row className="justify-content-lg-center">
+                    <img src={band2} alt="release" className="band-image"/>
+                </Row>
+                <Row>
+                    <div className="band-bio">
                         <p>
                             After gaining a reputation as promising live act, 
                             the three-piece released their self-recorded debut EP "A" in December 2018, along with 
@@ -39,7 +47,7 @@ export function Band(){
                     </div>
                 </Row>
                 <Row className="justify-content-lg-center">
-                    <img src={band2} alt="release" className="band-image"/>
+                    <img src={band3} alt="release" className="band-image"/>
                 </Row>
             </Container>
         </>

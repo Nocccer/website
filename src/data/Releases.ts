@@ -117,7 +117,7 @@ export const releases: ReleaseConf[] =
             name: "Disconnect / Connect",
             picture: disconnect_connect,
             date: "05/15/2020",
-            description: "ost - single",
+            description: "soundtrack",
             streams: [
                 {
                     name: "spotify",

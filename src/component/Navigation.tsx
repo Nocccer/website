@@ -24,12 +24,12 @@ export function Navigation() {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='navigation' className="menu-entry" role="navigation">
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#/"} className="navbar-entry">Home</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#/band"} className="navbar-entry">Band</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#/music"} className="navbar-entry">Music</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#/videos"} className="navbar-entry">Videos</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#/dates"} className="navbar-entry">Dates</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#/contact"} className="navbar-entry">Contact</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/"} className="navbar-entry">home</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/band"} className="navbar-entry">band</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/music"} className="navbar-entry">music</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/videos"} className="navbar-entry">videos</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/dates"} className="navbar-entry">dates</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#/contact"} className="navbar-entry">contact</Nav.Link>
                     </Navbar.Collapse>
                     <Navbar.Collapse>
                         <Nav.Link href='https://www.instagram.com/isolate.band/' >                        

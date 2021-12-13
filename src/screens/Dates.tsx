@@ -5,15 +5,17 @@ import './Dates.css';
 
 export function Dates() {
     const time = new Date();
+    let upcoming = false;
 
     return (
         <>
             <Container className="date-container">
-                <h2>dates</h2>
+                <h2 className="date-h2">dates</h2>
                 {dates.map((date) => {
                     const current_time = [time.getMonth() + 1, time.getDate(), time.getFullYear()].join('/');
                     if (checkDate(date.date, current_time))
                     {
+                        upcoming = true;
                         let tmp_date = <div className="date-div"> {date.date} <b> {date.venue} </b>, {date.location} <i> {date.description} </i></div>;
                         if (date.link?.length !== 0)
                             return (<a className="url-link" href={date.link}>{tmp_date}</a>);
@@ -25,7 +27,13 @@ export function Dates() {
                         return <></>;
                     }
                 })}
-                <h2>past concerts</h2>
+                {!upcoming && 
+                    <div>
+                        <p><i>currently in the studio!</i></p>
+                        <a className="url-link" href="mailto:booking@weareisolate.com"><i>book us here</i></a>
+                    </div>
+                    }
+                <h2 className="date-h2" >past concerts</h2>
                 {dates.map((date) => {
                     const current_time = [time.getMonth() + 1, time.getDate(), time.getFullYear()].join('/');
                     if (!checkDate(date.date, current_time))
