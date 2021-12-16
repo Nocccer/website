@@ -30,7 +30,7 @@ export function Release({
                 </Card.Body>
             </Card>
 
-            <OffCanvas show={show} streams={streams} buys={buys} closeFunction={handleClose}/>
+            <OffCanvas show={show} streams={streams} buys={buys} closeFunction={handleClose} image={picture}/>
         </>
     );
 }

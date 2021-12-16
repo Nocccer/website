@@ -16,7 +16,7 @@ export function Home() {
                     <Image src={releases[0].picture} className="home_release_image" onClick={toggleShow}/>
                 </Row>
 
-                <OffCanvas show={show} streams={releases[0].streams} buys={releases[0].buys} closeFunction={closeOffCanvas}/>
+                <OffCanvas show={show} streams={releases[0].streams} buys={releases[0].buys} closeFunction={closeOffCanvas} image={releases[0].picture}/>
             </Container>
         </>
     );
