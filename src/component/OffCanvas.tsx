@@ -26,7 +26,7 @@ export function OffCanvas({
     const [borderColor, setBorderColor] = useState<string>("#ffffff");
     const [closeButtonInvert, setCloseButtonInvert] = useState<number>(0);
 
-    getPaletteFromURL(image, 2)
+    getPaletteFromURL(image, 2, 0.5)
         .then(color => {
             setTextColor('#' + rgbHex(color[0][0], color[0][1], color[0][2]));
             setBackgroundColor('#' + rgbHex(color[1][0], color[1][1], color[1][2]));
