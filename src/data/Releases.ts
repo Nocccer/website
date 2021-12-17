@@ -10,6 +10,13 @@ export interface LinkConf {
     link: string;
 }
 
+export interface ColorStyleConf {
+    textColor: string;
+    backgroundColor: string;
+    borderColor: string;
+    isBright: boolean;
+}
+
 export interface ReleaseConf {
     name: string;
     picture: string;
@@ -17,6 +24,7 @@ export interface ReleaseConf {
     description: string;
     streams: LinkConf[];
     buys: LinkConf[];
+    colorStyle: ColorStyleConf;
 }
 
 export const releases: ReleaseConf[] =
@@ -65,7 +73,13 @@ export const releases: ReleaseConf[] =
                     name: "amazon",
                     link: "https://www.amazon.de/gp/product/B0996GL78V/ref=dm_ws_sp_ps_dp"
                 }
-            ]
+            ],
+            colorStyle: {
+                textColor: '#ffffff',
+                backgroundColor: '#000000',
+                borderColor: '#000000',
+                isBright: false
+            }
         },
         {
             name: "Quarry",
@@ -111,7 +125,13 @@ export const releases: ReleaseConf[] =
                     name: "amazon",
                     link: "https://www.amazon.de/dp/B09968N69K/ref=ap_ws_tlw_trk1?tag=sp0f88-20"
                 }
-            ]
+            ],
+            colorStyle: {
+                textColor: '#ffffff',
+                backgroundColor: '#000000',
+                borderColor: '#000000',
+                isBright: false
+            }
         },
         {
             name: "Disconnect / Connect",
@@ -161,7 +181,13 @@ export const releases: ReleaseConf[] =
                     name: "amazon",
                     link: "https://www.amazon.de/Disconnect-Connect/dp/B088SC45H9/ref=sr_1_7?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=disconnect+%2F+connect&qid=1627042906&s=dmusic&sr=1-7"
                 }
-            ]
+            ],
+            colorStyle: {
+                textColor: '#000000',
+                backgroundColor: '#ffffff',
+                borderColor: '#ffffff',
+                isBright: true
+            }
         },
         {
             name: "A",
@@ -211,7 +237,13 @@ export const releases: ReleaseConf[] =
                     name: "amazon",
                     link: "https://www.amazon.de/dp/B07L6PYVZ8/ref=ap_ws_tlw_alb1"
                 }
-            ]
+            ],
+            colorStyle: {
+                textColor: '#000000',
+                backgroundColor: '#ffffff',
+                borderColor: '#ffffff',
+                isBright: true
+            }
         },
         {
             name: "Asleep",
@@ -261,7 +293,13 @@ export const releases: ReleaseConf[] =
                     name: "amazon",
                     link: "https://www.amazon.de/Asleep-Isolate/dp/B07L6PPSL1/ref=sr_1_51?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=isolate+asleep&qid=1627221624&s=dmusic&sr=1-51"
                 }
-            ]
+            ],
+            colorStyle: {
+                textColor: '#000000',
+                backgroundColor: '#ffffff',
+                borderColor: '#ffffff',
+                isBright: true
+            }
         },
         {
             name: "Bonsai",
@@ -274,6 +312,12 @@ export const releases: ReleaseConf[] =
                     name: "bandcamp",
                     link: "https://weareisolate.bandcamp.com/track/bonsai"
                 }
-            ]
+            ],
+            colorStyle: {
+                textColor: '#000000',
+                backgroundColor: '#ffffff',
+                borderColor: '#ffffff',
+                isBright: true
+            }
         }
     ]

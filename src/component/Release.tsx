@@ -10,7 +10,8 @@ export function Release({
     date,
     description,
     streams,
-    buys
+    buys,
+    colorStyle
 }: ReleaseConf
 ) {
     const [show, setShow] = useState(false);
@@ -30,7 +31,7 @@ export function Release({
                 </Card.Body>
             </Card>
 
-            <OffCanvas show={show} streams={streams} buys={buys} closeFunction={handleClose} image={picture}/>
+            <OffCanvas show={show} streams={streams} buys={buys} closeFunction={handleClose} image={picture} colors={colorStyle}/>
         </>
     );
 }
