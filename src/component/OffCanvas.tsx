@@ -5,20 +5,22 @@ import './OffCanvas.css'
 
 interface Props {
     show: boolean;
-    closeFunction: () => void;
+    closeFunction?: () => void;
     streams: LinkConf[];
     buys: LinkConf[];
     image: string;
     colors: ColorStyleConf;
+    renderCloseButton?: boolean;
 }
 
 export function OffCanvas({
     show,
-    closeFunction,
+    closeFunction = () => {return},
     streams,
     buys,
     image,
-    colors
+    colors,
+    renderCloseButton = true
 }: Props
 ) {
     const closeButtonInvert = colors.isBright ? 0 : 100;
@@ -27,7 +29,8 @@ export function OffCanvas({
         <Offcanvas show={show} placement="top" >
             <div className="offcanvas-background" style={{backgroundImage: `url(${image})`}}/>
             <div className="scrollview">
-                <Offcanvas.Header closeButton onHide={closeFunction} style={{filter: `invert(${closeButtonInvert}%)`}}/>
+                {renderCloseButton &&
+                <Offcanvas.Header closeButton onHide={closeFunction} style={{filter: `invert(${closeButtonInvert}%)`}}/>}
                 {streams.length !== 0 && 
                 <Offcanvas.Title 
                     as="h2" 
