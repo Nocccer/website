@@ -19,6 +19,8 @@
 
 .offcanvas-header {
   justify-content: center;
+  font-family: "SpartanMB-Regular";
+  font-weight: bold;
 }
 
 .offcanvas-top {
@@ -30,7 +32,6 @@
   background-color: transparent;
   text-align: center;
   font-family: "SpartanMB-Regular";
-  font-weight: bold;
 }
 
 .offcanvas-stream-buy,

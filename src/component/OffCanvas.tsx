@@ -4,6 +4,7 @@ import { LinkConf, ColorStyleConf } from '../data/Releases';
 import './OffCanvas.css'
 
 interface Props {
+    name?: string; 
     show: boolean;
     closeFunction?: () => void;
     streams: LinkConf[];
@@ -14,6 +15,7 @@ interface Props {
 }
 
 export function OffCanvas({
+    name = 'Release',
     show,
     closeFunction = () => {return},
     streams,
@@ -29,8 +31,14 @@ export function OffCanvas({
         <Offcanvas show={show} placement="top" >
             <div className="offcanvas-background" style={{backgroundImage: `url(${image})`}}/>
             <div className="scrollview">
-                {renderCloseButton &&
-                <Offcanvas.Header closeButton onHide={closeFunction} style={{filter: `invert(${closeButtonInvert}%)`}}/>}
+                {renderCloseButton 
+                    ? <Offcanvas.Header closeButton onHide={closeFunction} style={{filter: `invert(${closeButtonInvert}%)`}}/>
+                    : <Offcanvas.Header 
+                        style={{
+                            color: colors.textColor, 
+                            filter: `invert(${closeButtonInvert}%)`, 
+                            fontSize: '50px'
+                        }}>{name}</Offcanvas.Header>}
                 {streams.length !== 0 && 
                 <Offcanvas.Title 
                     as="h2" 

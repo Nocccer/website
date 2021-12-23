@@ -12,30 +12,37 @@ import { NewRelease } from './screens/NewRelease';
 import { Navigation } from './component/Navigation';
 import { HashRouter as Router } from 'react-router-dom';
 import { releases } from './data/Releases';
-import { getPaletteFromURL } from 'color-thief-node';
-import rgbHex from 'rgb-hex';
+// import { getPaletteFromURL } from 'color-thief-node';
+// import rgbHex from 'rgb-hex';
 
 
 function App() {
 
-  releases.map((release) => (
-    getPaletteFromURL(release.picture, 2)
-      .then(color => {
-        release.colorStyle.textColor = '#' + rgbHex(color[0][0], color[0][1], color[0][2]);
-        release.colorStyle.backgroundColor = '#' + rgbHex(color[1][0], color[1][1], color[1][2]);
-        release.colorStyle.borderColor = '#' + rgbHex(color[2][0], color[2][1], color[2][2]);
-        if (color[0][0] + color[0][1] + color[0][2] >= 384) // --> is bright
-        {
-          release.colorStyle.isBright = true;
-        }
-        else // --> is dark
-        {
-          release.colorStyle.isBright = false;
-        }
-      })
-      .catch(e => {
-        console.log(e);
-      })))
+  // RUN THIS FOR NEW RELEASE AND SET THE COLORS IN data/Releases.ts
+  // releases.map((release) => (
+  //   getPaletteFromURL(release.picture, 2)
+  //     .then(color => {
+  //       release.colorStyle.textColor = '#' + rgbHex(color[0][0], color[0][1], color[0][2]);
+  //       release.colorStyle.backgroundColor = '#' + rgbHex(color[1][0], color[1][1], color[1][2]);
+  //       release.colorStyle.borderColor = '#' + rgbHex(color[2][0], color[2][1], color[2][2]);
+  //       if (color[0][0] + color[0][1] + color[0][2] >= 384) // --> is bright
+  //       {
+  //         release.colorStyle.isBright = true;
+  //       }
+  //       else // --> is dark
+  //       {
+  //         release.colorStyle.isBright = false;
+  //       }
+
+  //       console.log('Colors for ' + release.name)
+  //       console.log('textColor: ' + release.colorStyle.textColor)
+  //       console.log('backgroundColor: ' + release.colorStyle.backgroundColor)
+  //       console.log('borderColor: ' + release.colorStyle.borderColor)
+  //       console.log('isBright: ' + release.colorStyle.isBright)
+  //     })
+  //     .catch(e => {
+  //       console.log(e);
+  //     })))
 
   return (
     <div className="app">

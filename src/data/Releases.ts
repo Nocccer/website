@@ -75,9 +75,9 @@ export const releases: ReleaseConf[] =
                 }
             ],
             colorStyle: {
-                textColor: '#ffffff',
-                backgroundColor: '#000000',
-                borderColor: '#000000',
+                textColor: '#292929',
+                backgroundColor: '#d2d2d2',
+                borderColor: '#949494',
                 isBright: false
             }
         },
@@ -127,9 +127,9 @@ export const releases: ReleaseConf[] =
                 }
             ],
             colorStyle: {
-                textColor: '#ffffff',
-                backgroundColor: '#000000',
-                borderColor: '#000000',
+                textColor: '#282828',
+                backgroundColor: '#d4d4d4',
+                borderColor: '#949494',
                 isBright: false
             }
         },
@@ -183,9 +183,9 @@ export const releases: ReleaseConf[] =
                 }
             ],
             colorStyle: {
-                textColor: '#000000',
-                backgroundColor: '#ffffff',
-                borderColor: '#ffffff',
+                textColor: '#be9879',
+                backgroundColor: '#070606',
+                borderColor: '#7c2c04',
                 isBright: true
             }
         },
@@ -239,9 +239,9 @@ export const releases: ReleaseConf[] =
                 }
             ],
             colorStyle: {
-                textColor: '#000000',
-                backgroundColor: '#ffffff',
-                borderColor: '#ffffff',
+                textColor: '#f0ece0',
+                backgroundColor: '#53462b',
+                borderColor: '#557374',
                 isBright: true
             }
         },
@@ -295,9 +295,9 @@ export const releases: ReleaseConf[] =
                 }
             ],
             colorStyle: {
-                textColor: '#000000',
-                backgroundColor: '#ffffff',
-                borderColor: '#ffffff',
+                textColor: '#f5f3e9',
+                backgroundColor: '#6d612d',
+                borderColor: '#74847e',
                 isBright: true
             }
         },
@@ -314,9 +314,9 @@ export const releases: ReleaseConf[] =
                 }
             ],
             colorStyle: {
-                textColor: '#000000',
-                backgroundColor: '#ffffff',
-                borderColor: '#ffffff',
+                textColor: '#c4c5c8',
+                backgroundColor: '#1f1f1e',
+                borderColor: '#5b5b64',
                 isBright: true
             }
         }

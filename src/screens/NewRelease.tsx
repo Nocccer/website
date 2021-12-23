@@ -3,7 +3,7 @@ import { ReleaseConf } from '../data/Releases';
 import { OffCanvas } from '../component/OffCanvas';
 
 export function NewRelease({
-    // name,
+    name,
     picture,
     // date,
     // description,
@@ -14,7 +14,7 @@ export function NewRelease({
 {
     return (
         <>
-            <OffCanvas show={true} streams={streams} buys={buys} renderCloseButton={false} image={picture} colors={colorStyle}/>
+            <OffCanvas name={name} show={true} streams={streams} buys={buys} renderCloseButton={false} image={picture} colors={colorStyle}/>
         </>
     );
 }
