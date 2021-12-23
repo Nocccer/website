@@ -27,10 +27,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start && yarn post",
+    "build": "react-scripts build && yarn post",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "post": "copyfiles --flat src/presskit/isolate_presskit.zip build/static/media",
     "deploy": "yarn build && gh-pages --add -d build"
   },
   "eslintConfig": {
@@ -52,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "gh-pages": "^3.2.3"
   }
 }
