@@ -35,7 +35,7 @@ export function OffCanvas({
                     ? <Offcanvas.Header closeButton onHide={closeFunction} style={{filter: `invert(${closeButtonInvert}%)`}}/>
                     : <Offcanvas.Header 
                         style={{
-                            color: 'black', // added for flare, else add --> colors.textColor, 
+                            color: colors.textColor, 
                             filter: `invert(${closeButtonInvert}%)`, 
                             fontSize: '50px'
                         }}>{name}</Offcanvas.Header>}

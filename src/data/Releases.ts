@@ -75,7 +75,7 @@ export const releases: ReleaseConf[] =
             }
         ],
         colorStyle: {
-            textColor: '#d18d42',
+            textColor: '#181515',
             backgroundColor: '#2e9555',
             borderColor: '#df3962',
             isBright: true
