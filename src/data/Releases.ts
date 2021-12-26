@@ -58,6 +58,10 @@ export const releases: ReleaseConf[] =
             {
                 name: "youtube-music",
                 link: "https://music.youtube.com/playlist?list=OLAK5uy_lS3-3gR1F3oQfmHy1qjxDmZqWWgMQhECg&feature=share"
+            },
+            {
+                name: "youtube",
+                link: "https://youtu.be/dRhWbG3libM"
             }
         ],
         buys: [
