@@ -7,6 +7,7 @@
 .scrollview {
   max-height: 100%;
   overflow-y: scroll;
+  overflow-x: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
   z-index: 1045;

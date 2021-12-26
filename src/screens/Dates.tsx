@@ -29,7 +29,7 @@ export function Dates() {
                 })}
                 {!upcoming && 
                     <div>
-                        <p><i>currently in the studio!</i></p>
+                        <p className="no-upcoming-p"><i>currently in the studio!</i></p>
                         <a className="url-link" href="mailto:booking@weareisolate.com"><i>book us here</i></a>
                     </div>
                     }
