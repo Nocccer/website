@@ -22,6 +22,7 @@ export function NewRelease({
                 <meta property="og:url" content={`https://www.weareisolate.com/#/${name.toLowerCase()}`} />
                 <meta property="og:image" content={picture} />
                 <title>{name} out now!</title>
+                <link rel="canonical" href={`https://www.weareisolate.com/#/${name.toLowerCase()}`} />
             </Helmet>
             <OffCanvas name={name} show={true} streams={streams} buys={buys} renderCloseButton={false} image={picture} colors={colorStyle}/>
         </>
