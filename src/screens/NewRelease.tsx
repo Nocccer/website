@@ -15,14 +15,14 @@ export function NewRelease({
 {
     return (
         <>
-        <Helmet>
-            <meta charSet="utf-8" />
-            <meta property="og:title" content={`${name} out now!`} />
-            <meta property="og:type" content="video.movie" />
-            <meta property="og:url" content={`https://www.weareisolate.com/#/${name}`} />
-            <meta property="og:image" content={picture} />
-            <title>${name} out now!</title>
-        </Helmet>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta property="og:title" content={`${name} out now!`} />
+                <meta property="og:type" content="music" />
+                <meta property="og:url" content={`https://www.weareisolate.com/#/${name.toLowerCase()}`} />
+                <meta property="og:image" content={picture} />
+                <title>{name} out now!</title>
+            </Helmet>
             <OffCanvas name={name} show={true} streams={streams} buys={buys} renderCloseButton={false} image={picture} colors={colorStyle}/>
         </>
     );
