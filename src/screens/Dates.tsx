@@ -28,7 +28,7 @@ export function Dates() {
                     }
                 })}
                 {!upcoming && 
-                    <div>
+                    <div style={{marginBottom: '25px'}}>
                         <p className="no-upcoming-p"><i>currently in the studio!</i></p>
                         <a className="url-link" href="mailto:booking@weareisolate.com"><i>book us here</i></a>
                     </div>
