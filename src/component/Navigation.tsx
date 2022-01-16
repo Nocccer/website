@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import isolate from '../images/isolate.png';
+import isolate from '../images/isolate.svg';
 import instagram from '../images/instagram.png';
 import facebook from '../images/facebook.png';
 import spotify from '../images/spotify.png';

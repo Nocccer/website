@@ -11,7 +11,7 @@ export function Contact()
                 For everything else, reach out to us at <br></br>
                 <a className="url-link" href="mailto:info@weareisolate.com">info@weareisolate.com</a><br></br>
                 or on social media<br></br><br></br>
-                Our actual presskit can be found here: <br></br>
+                Our presskit can be found here: <br></br>
                 <a className='url-link' href={'/static/media/isolate_presskit.zip'} download={true}>Presskit</a><br></br><br></br>
                 isolate is<br></br><br></br>
                 Niklas Ciecior <br></br>
