@@ -43,6 +43,8 @@ export function Band(){
                             remotely from both countries. This new long-distance collaboration yielded their next release 
                             Topology, a four-track EP with more in-depth focus on vocals and cohesive song structure, alternating 
                             between Post, Progressive and Art rock. "Topology" was released in July 2021, along with a single version of "Quarry".
+                        </p>
+                        <p>
                             While working on their first full-length album, the band released their dream pop-loaded single Flare shortly after.
                         </p>
                     </div>
