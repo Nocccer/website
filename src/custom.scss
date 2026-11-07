@@ -12,8 +12,23 @@
     font-style: normal;
   }
 
+:root {
+    --paper-background-color: #594326;
+    --paper-background-image:
+        url('./images/cardboard-texture.svg'),
+        radial-gradient(ellipse at 18% 0%, rgba(220, 136, 64, 0.14), transparent 42rem),
+        radial-gradient(ellipse at 85% 55%, rgba(234, 190, 112, 0.06), transparent 48rem),
+        linear-gradient(145deg, #6b512f 0%, #594326 55%, #46331f 100%);
+}
+
 html body {
-    background: url('./images/back.png');
+    min-height: 100vh;
+    background-color: var(--paper-background-color);
+    background-image: var(--paper-background-image);
+    background-size: 128px 128px, auto, auto, auto;
+    background-blend-mode: overlay, normal, normal, normal;
+    background-attachment: fixed;
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
     font-family: "SpartanMB-Regular";
     color: #eae7d9;
 }
@@ -25,4 +40,3 @@ html body {
 .row {
     justify-content: center;
 }
-

@@ -2,18 +2,10 @@
 
 name: Deploy gh-pages
 
-# Controls when the workflow will run
+# Deploy when changes are pushed to master.
 on:
-  # Triggers the workflow on push or pull request events but only for the gh-pages branch
   push:
     branches: [ master ]
-
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '00 3 * * *'
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
 import isolate from '../images/isolate.svg';
 import instagram from '../images/instagram.png';
 import facebook from '../images/facebook.png';
@@ -13,7 +14,7 @@ export function Navigation() {
         <>
             <Navbar className="navbar" collapseOnSelect fixed='top' expand='xl' bg='dark' variant='dark'>
                 <Container>
-                    <Navbar.Brand href={process.env.PUBLIC_URL + "/#/"}>
+                    <Navbar.Brand as={Link} to="/">
                         <img
                             src={isolate}
                             className="logo"
@@ -22,19 +23,17 @@ export function Navigation() {
                             alt=""
                         />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+                    <Navbar.Toggle aria-controls='navigation' />
                     <Navbar.Collapse id='navigation'>
                         <Nav className="menu-entry" role="navigation">
-                            <Nav.Link href={process.env.PUBLIC_URL + "/#/"} className="navbar-entry">home</Nav.Link>
-                            <Nav.Link href={process.env.PUBLIC_URL + "/#/band"} className="navbar-entry">band</Nav.Link>
-                            <Nav.Link href={process.env.PUBLIC_URL + "/#/music"} className="navbar-entry">music</Nav.Link>
-                            <Nav.Link href={process.env.PUBLIC_URL + "/#/videos"} className="navbar-entry">videos</Nav.Link>
-                            <Nav.Link href={process.env.PUBLIC_URL + "/#/dates"} className="navbar-entry">dates</Nav.Link>
-                            <Nav.Link href={process.env.PUBLIC_URL + "/#/contact"} className="navbar-entry">contact</Nav.Link>
+                            <Nav.Link as={NavLink} exact to="/" className="navbar-entry">home</Nav.Link>
+                            <Nav.Link as={NavLink} to="/band" className="navbar-entry">band</Nav.Link>
+                            <Nav.Link as={NavLink} to="/music" className="navbar-entry">music</Nav.Link>
+                            <Nav.Link as={NavLink} to="/videos" className="navbar-entry">videos</Nav.Link>
+                            <Nav.Link as={NavLink} to="/dates" className="navbar-entry">dates</Nav.Link>
+                            <Nav.Link as={NavLink} to="/contact" className="navbar-entry">contact</Nav.Link>
                         </Nav>
-                    </Navbar.Collapse>
-                    <Navbar.Collapse>
-                        <Nav className="navbar-nav flex-row">
+                        <Nav className="social-nav">
                             <Nav.Link href='https://www.instagram.com/isolate.band/'>
                                 <img src={instagram} alt="instagram" className="social-media" />
                             </Nav.Link>

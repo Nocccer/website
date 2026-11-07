@@ -28,7 +28,7 @@
     "build": "react-scripts build && npm run post",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "post": "copyfiles --flat src/presskit/isolate_presskit.zip build/static/media",
+    "post": "copyfiles --flat src/presskit/isolate_presskit.zip build/static/media && node scripts/copy-index-to-404.js",
     "deploy": "npm run build && gh-pages --add -d build"
   },
   "eslintConfig": {

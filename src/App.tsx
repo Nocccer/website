@@ -1,7 +1,7 @@
 import React from 'react';
 import './custom.scss';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './screens/Home';
 import { Band } from './screens/Band';
 import { Music } from './screens/Music';
@@ -10,7 +10,6 @@ import { Dates } from './screens/Dates';
 import { Contact } from './screens/Contact';
 import { NewRelease } from './screens/NewRelease';
 import { Navigation } from './component/Navigation';
-import { HashRouter as Router } from 'react-router-dom';
 import { releases } from './data/Releases';
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
           <Route path='/videos' component={Videos} />
           <Route path='/dates' component={Dates} />
           <Route path='/contact' component={Contact} />
-          <Route path={'/' + releases[0].name} render={() => <NewRelease {...releases[0]}/>} />
+          <Route path={'/' + releases[0].name.toLowerCase()} render={() => <NewRelease {...releases[0]}/>} />
         </Switch>
       </Router>
     </div>
