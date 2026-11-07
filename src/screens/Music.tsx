@@ -10,7 +10,7 @@ export function Music()
             <Container>
                 <Row className="justify-content-lg-center">
                     {releases.map((release) => (
-                        <Release {...release}/>
+                        <Release key={release.name} {...release}/>
                     ))}
                 </Row>
             </Container>

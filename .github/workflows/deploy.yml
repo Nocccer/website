@@ -2,18 +2,10 @@
 
 name: Deploy gh-pages
 
-# Controls when the workflow will run
+# Deploy when changes are pushed to master.
 on:
-  # Triggers the workflow on push or pull request events but only for the gh-pages branch
   push:
     branches: [ master ]
-
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '00 3 * * *'
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,16 +17,21 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26
+          cache: npm
 
       # Runs a single command using the runners shell
       - name: install
-        run: yarn install
+        run: npm ci
 
       # Runs a set of commands using the runners shell
       - name: build & deploy
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          yarn run deploy -- -u "github-actions-bot <support+actions@github.com>"
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

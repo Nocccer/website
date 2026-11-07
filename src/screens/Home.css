@@ -1,11 +1,6 @@
-.home_release_image {
-    width: 50%;
-    height: 50%;
-    transition: 1s;
-}
-
-.home_release_image:hover {
-  transition: 1s;
-  transform: scale(1.1);
-  cursor: pointer;
+.home-page {
+  display: flex;
+  min-height: calc(100svh - 121px);
+  align-items: center;
+  padding: 1rem 0;
 }

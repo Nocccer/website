@@ -1,44 +1,126 @@
-.card-body {
+.release-card {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  min-width: 0;
+  width: 18rem;
   text-align: center;
-  font-style: italic;
-  padding: 0px;
-  margin-bottom: 20px;
 }
 
-.card-title {
-  margin-bottom: 15px;
-  text-align: center;
-  margin-top: 15px;
+.release-card .card-body {
+  padding: 0;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.release-card .card-title {
+  margin: 15px 0;
   font-weight: bold;
 }
 
-.card-subtitle {
+.release-card .card-subtitle {
   margin-bottom: 5px;
-  text-align: center;
+  color: rgba(255, 255, 255, 0.82);
 }
 
-.release-card {
-  background-color: transparent;
-  width: 18rem;
+.release-card-artwork {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0.375rem;
+  overflow: visible;
+  background: transparent;
+  cursor: default;
 }
 
-.release-card-image {
-  transition: 0.4s;
-  transform: scale(1);
-}
-
-.release-card-image:hover {
-  transition: 0.4s;
-  transform: scale(1.1);
+.release-card-artwork:not(:disabled) {
   cursor: pointer;
 }
 
-.release-card-toogle {
-  background-color: transparent;
-  border-color: transparent;
+.release-card-artwork:hover,
+.release-card-artwork:focus-visible {
+  z-index: 1;
 }
 
-.release-card-toogle:hover {
-  background-color: transparent;
-  border-color: transparent;
+.release-card-artwork:focus-visible {
+  outline: 2px solid #dc8840;
+  outline-offset: 4px;
+}
+
+.release-card-image {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+.release-card-artwork:hover .release-card-image,
+.release-card-artwork:focus-visible .release-card-image {
+  transform: scale(1.1);
+}
+
+.release-card-content {
+  padding-top: 1rem;
+  text-align: left;
+}
+
+.release-card-kicker {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #dc8840;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.release-card-description {
+  margin: 0.5rem 0 1rem;
+  color: rgba(234, 231, 217, 0.72);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.release-card-featured {
+  width: min(100%, 32rem, max(10rem, calc(100svh - 18rem)));
+  margin: 0 auto;
+  color: #eae7d9;
+  text-align: center;
+}
+
+.release-card-featured .release-card-kicker {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.release-card-featured .release-card-artwork {
+  border-radius: 0.375rem;
+}
+
+.release-card-featured .release-card-content {
+  text-align: center;
+}
+
+.release-card-featured .release-card-image {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.release-card-featured .card-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.75rem;
+}
+
+.release-card-featured .card-subtitle {
+  margin-bottom: 0;
+  color: rgba(234, 231, 217, 0.65);
+}
+
+.release-card-featured .card-body {
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
