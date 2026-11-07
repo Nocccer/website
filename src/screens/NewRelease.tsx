@@ -1,11 +1,11 @@
 import React from 'react';
-import { ReleaseConf } from '../data/Releases';
+import { isReleaseUpcoming, ReleaseConf } from '../data/Releases';
 import { OffCanvas } from '../component/OffCanvas';
 
 export function NewRelease({
     name,
     picture,
-    // date,
+    date,
     // description,
     streams,
     buys,
@@ -14,7 +14,7 @@ export function NewRelease({
 {
     return (
         <>
-            <OffCanvas name={name} show={true} streams={streams} buys={buys} renderCloseButton={false} image={picture} colors={colorStyle}/>
+            <OffCanvas name={name} show={true} streams={streams} buys={buys} isUpcoming={isReleaseUpcoming(date)} renderCloseButton={false} image={picture} colors={colorStyle}/>
         </>
     );
 }

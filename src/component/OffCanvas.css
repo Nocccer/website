@@ -9,6 +9,7 @@
   position: relative;
   z-index: 1;
   max-height: 100%;
+  padding: 0 1rem 2rem;
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: contain;
@@ -29,6 +30,7 @@
   justify-content: center;
   font-family: "SpartanMB-Regular";
   font-weight: bold;
+  padding-bottom: 0.5rem;
 }
 
 .offcanvas-header .btn-close {
@@ -43,29 +45,44 @@
 }
 
 .offcanvas-h2 {
+  margin: 1.5rem auto 1rem;
   background-color: transparent;
   text-align: center;
   font-family: "SpartanMB-Regular";
 }
 
+.offcanvas-link-item {
+  width: min(100%, 680px);
+  margin: 0 auto 0.65rem;
+}
+
 .offcanvas-stream-buy,
 .offcanvas-stream-buy:focus {
-  background-color: transparent;
+  display: flex;
+  width: 100%;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: center;
   border: solid 2px black;
   opacity: 0.8;
   transition: 0.2s;
   text-decoration: none;
-  margin: 0 5px 5px 5px;
   color: black;
-  width: 250px;
+  font-family: "SpartanMB-Regular";
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .offcanvas-stream-buy:hover {
-  background-color: transparent;
-  border: solid 2px #dc8840;
   opacity: 1;
+  filter: brightness(1.08);
   transition: 0.2s;
-  color: #dc8840;
+  transform: translateY(-1px);
+}
+
+.offcanvas-stream-buy:focus-visible {
+  outline: 2px solid #eae7d9;
+  outline-offset: 3px;
 }
 
 .offcanvas-background {

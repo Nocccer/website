@@ -1,4 +1,5 @@
 import flare from '../images/flare.jpg'
+import suburbia from '../images/SUBURBIA_Artwork.jpg';
 import topology from '../images/topology.jpg';
 import quarry from '../images/quarry.jpg';
 import disconnect_connect from '../images/disconnect_connect.jpg';
@@ -8,7 +9,9 @@ import bonsai from '../images/bonsai.jpg';
 
 export interface LinkConf {
     name: string;
-    link: string;
+    link?: string;
+    preSaveLink?: string;
+    preOrderLink?: string;
 }
 
 export interface ColorStyleConf {
@@ -28,8 +31,31 @@ export interface ReleaseConf {
     colorStyle: ColorStyleConf;
 }
 
+export function isReleaseUpcoming(date: string): boolean {
+    const [month, day, year] = date.split('/');
+    const releaseDate = new Date(Number(year), Number(month) - 1, Number(day));
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    return releaseDate > today;
+}
+
 export const releases: ReleaseConf[] =
     [{
+        name: "Suburbia",
+        picture: suburbia,
+        date: "11/20/2026",
+        description: "single",
+        streams: [],
+        buys: [],
+        colorStyle: {
+            textColor: '#181515',
+            backgroundColor: '#f0c94a',
+            borderColor: '#4183c4',
+            isBright: true
+        }
+    },
+    {
         name: "Flare",
         picture: flare,
         date: "12/27/2021",
