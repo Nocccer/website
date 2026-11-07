@@ -47,7 +47,7 @@ export function OffCanvas({
                         color: colors.backgroundColor
                     }}>stream</Offcanvas.Title>}
                 {streams.map((stream) => (
-                    <Row className="justify-content-lg-center">
+                    <Row key={stream.link} className="justify-content-lg-center">
                         <Button 
                             variant="primary" 
                             size="lg" 
@@ -71,7 +71,7 @@ export function OffCanvas({
                         color: colors.backgroundColor
                     }}>buy</Offcanvas.Title>}
                 {buys.map((buy) => (
-                    <Row className="justify-content-lg-center">
+                    <Row key={buy.link} className="justify-content-lg-center">
                         <Button 
                             variant="primary" 
                             size="lg" 
