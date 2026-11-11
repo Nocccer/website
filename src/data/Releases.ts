@@ -46,11 +46,30 @@ export const releases: ReleaseConf[] = [
     picture: suburbia,
     date: "11/20/2026",
     description: "single",
-    streams: [],
+    streams: [
+      {
+        name: "spotify",
+        preSaveLink: "https://open.spotify.com/album/3CLKZhJAB83VkmMaiHnHYA",
+      },
+      {
+        name: "apple",
+        preSaveLink:
+          "https://music.apple.com/us/album/suburbia-single/6827464092?l=de&ls=1",
+      },
+      {
+        name: "deezer",
+        preSaveLink: "https://www.deezer.com/album/1131650901",
+      },
+      {
+        name: "youtube-music",
+        preSaveLink:
+          "https://music.youtube.com/playlist?list=OLAK5uy_kHSstHt5Je0Bpy-DBQ9Qf1jz9wJEB0IdY",
+      },
+    ],
     buys: [],
     colorStyle: {
       textColor: "#181515",
-      backgroundColor: "#f0c94a",
+      backgroundColor: "#e65f39",
       borderColor: "#4183c4",
       isBright: true,
     },
