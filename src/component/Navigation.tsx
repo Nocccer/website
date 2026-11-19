@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import isolate from '../images/isolate.svg';
 import instagram from '../images/instagram.png';
+import tiktok from '../images/tiktok.png';
 import facebook from '../images/facebook.png';
 import spotify from '../images/spotify.png';
 import bandcamp from '../images/bandcamp.png';
@@ -36,6 +37,9 @@ export function Navigation() {
                         <Nav className="social-nav">
                             <Nav.Link href='https://www.instagram.com/isolate.band/'>
                                 <img src={instagram} alt="instagram" className="social-media" />
+                            </Nav.Link>
+                            <Nav.Link href='https://www.tiktok.com/@isolate.band'>
+                                <img src={tiktok} alt="tiktok" className="social-media" />
                             </Nav.Link>
                             <Nav.Link href='https://www.facebook.com/we.are.isolate/'>
                                 <img src={facebook} alt="facebook" className="social-media" />
