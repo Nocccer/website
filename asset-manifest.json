@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.922b8578.css",
-    "main.js": "/static/js/main.294dbbf9.js",
+    "main.js": "/static/js/main.442a0508.js",
     "static/js/453.148b0809.chunk.js": "/static/js/453.148b0809.chunk.js",
     "static/media/band1.jpg": "/static/media/band1.ae7a21179d555153ebb5.jpg",
     "static/media/suburbia.jpg": "/static/media/suburbia.f46a3947cd0eee92dc9d.jpg",
@@ -21,6 +21,7 @@
     "static/media/SpartanMB-Regular.svg": "/static/media/SpartanMB-Regular.6e6fbc2069d766114ee1.svg",
     "static/media/SpartanMB-Regular.eot": "/static/media/SpartanMB-Regular.e0f8b35903cb6ee6b393.eot",
     "static/media/SpartanMB-Regular.ttf": "/static/media/SpartanMB-Regular.bb8853db5d7be9e23894.ttf",
+    "static/media/tiktok.png": "/static/media/tiktok.2a06c33554f36f983b4a.png",
     "static/media/disconnect_connect.jpg": "/static/media/disconnect_connect.9897477203e10addb7bd.jpg",
     "static/media/SpartanMB-Regular.woff": "/static/media/SpartanMB-Regular.94b7358763b44a97cafa.woff",
     "static/media/SpartanMB-Regular.woff2": "/static/media/SpartanMB-Regular.6b5221aa0180c4dc6d9d.woff2",
@@ -28,11 +29,11 @@
     "index.html": "/index.html",
     "static/media/cardboard-texture.svg": "/static/media/cardboard-texture.97cf44c096ef21950fcc.svg",
     "main.922b8578.css.map": "/static/css/main.922b8578.css.map",
-    "main.294dbbf9.js.map": "/static/js/main.294dbbf9.js.map",
+    "main.442a0508.js.map": "/static/js/main.442a0508.js.map",
     "453.148b0809.chunk.js.map": "/static/js/453.148b0809.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.922b8578.css",
-    "static/js/main.294dbbf9.js"
+    "static/js/main.442a0508.js"
   ]
 }
