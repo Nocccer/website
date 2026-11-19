@@ -49,7 +49,9 @@ export const releases: ReleaseConf[] = [
     streams: [
       {
         name: "spotify",
-        link: "https://open.spotify.com/album/3CLKZhJAB83VkmMaiHnHYA",
+        preSaveLink:
+          "https://open.spotify.com/album/3CLKZhJAB83VkmMaiHnHYA?si=WNMsjiZoSFqpLj6TJnP1pw",
+        link: "https://open.spotify.com/album/3CLKZhJAB83VkmMaiHnHYA?si=WNMsjiZoSFqpLj6TJnP1pw",
       },
       {
         name: "apple",
