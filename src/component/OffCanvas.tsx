@@ -79,7 +79,11 @@ export function OffCanvas({
     });
 
     return (
-        <Offcanvas show={show} placement="top" >
+        <Offcanvas
+            show={show}
+            placement="top"
+            style={{ backgroundColor: colors.backgroundColor }}
+        >
             <div className="offcanvas-background" style={{backgroundImage: `url(${image})`}}/>
             <div className="scrollview">
                 {renderCloseButton 
