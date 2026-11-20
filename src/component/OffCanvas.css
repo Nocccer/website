@@ -33,6 +33,12 @@
   padding-bottom: 0.5rem;
 }
 
+.offcanvas-dedicated-header {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+
 .offcanvas-header .btn-close {
   margin-left: auto;
   margin-right: auto;
@@ -54,6 +60,33 @@
 .offcanvas-link-item {
   width: min(100%, 680px);
   margin: 0 auto 0.65rem;
+}
+
+.offcanvas-social-links {
+  display: flex;
+  width: min(100%, 680px);
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  margin: 1.25rem auto 0;
+}
+
+.offcanvas-social-links a {
+  display: inline-flex;
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.offcanvas-social-links a:hover,
+.offcanvas-social-links a:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.offcanvas-social-links img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
 }
 
 .offcanvas-stream-buy,
@@ -78,6 +111,37 @@
   filter: brightness(1.08);
   transition: 0.2s;
   transform: translateY(-1px);
+}
+
+.offcanvas-link-prefix {
+  flex: 0 0 auto;
+  margin-right: 0.65rem;
+}
+
+.offcanvas-link-prefix-logo {
+  width: 1.45rem;
+  height: 1.45rem;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.offcanvas-link-prefix-fallback {
+  display: inline-flex;
+  width: 1.45rem;
+  height: 1.45rem;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .offcanvas-stream-buy:focus-visible {

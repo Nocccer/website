@@ -14,7 +14,17 @@ export function NewRelease({
 {
     return (
         <>
-            <OffCanvas name={name} show={true} streams={streams} buys={buys} isUpcoming={isReleaseUpcoming(date)} renderCloseButton={false} image={picture} colors={colorStyle}/>
+            <OffCanvas
+                name={name}
+                show={true}
+                streams={streams}
+                buys={buys}
+                isUpcoming={isReleaseUpcoming(date)}
+                renderCloseButton={false}
+                image={picture}
+                colors={colorStyle}
+                showSocialLinks={true}
+            />
         </>
     );
 }
