@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5b2bf37f.css",
-    "main.js": "/static/js/main.2ecdeb32.js",
+    "main.js": "/static/js/main.936c521b.js",
     "static/js/453.148b0809.chunk.js": "/static/js/453.148b0809.chunk.js",
     "static/media/band1.jpg": "/static/media/band1.ae7a21179d555153ebb5.jpg",
     "static/media/suburbia.jpg": "/static/media/suburbia.f46a3947cd0eee92dc9d.jpg",
@@ -29,11 +29,11 @@
     "index.html": "/index.html",
     "static/media/cardboard-texture.svg": "/static/media/cardboard-texture.97cf44c096ef21950fcc.svg",
     "main.5b2bf37f.css.map": "/static/css/main.5b2bf37f.css.map",
-    "main.2ecdeb32.js.map": "/static/js/main.2ecdeb32.js.map",
+    "main.936c521b.js.map": "/static/js/main.936c521b.js.map",
     "453.148b0809.chunk.js.map": "/static/js/453.148b0809.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b2bf37f.css",
-    "static/js/main.2ecdeb32.js"
+    "static/js/main.936c521b.js"
   ]
 }
