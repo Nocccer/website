@@ -49,33 +49,35 @@ export const releases: ReleaseConf[] = [
     streams: [
       {
         name: "spotify",
-        preSaveLink:
-          "https://open.spotify.com/album/3CLKZhJAB83VkmMaiHnHYA?si=WNMsjiZoSFqpLj6TJnP1pw",
-        link: "https://open.spotify.com/album/3CLKZhJAB83VkmMaiHnHYA?si=WNMsjiZoSFqpLj6TJnP1pw",
+        link: "https://open.spotify.com/track/0Y1O8ngsHohXojO8VVD4RO?si=93a629bf97874eca",
       },
       {
         name: "apple",
-        link: "https://music.apple.com/us/album/suburbia-single/6827464092?l=de&ls=1",
+        link: "https://music.apple.com/de/song/suburbia/6827464102",
       },
       {
         name: "deezer",
-        link: "https://www.deezer.com/album/1131650901",
+        link: "https://link.deezer.com/s/350zXJzbM8JHlF5HvPQXl",
       },
       {
         name: "tidal",
-        link: "https://tidal.com/search?q=Isolate%20Suburbia",
+        link: "https://tidal.com/track/573494925/u",
       },
       {
         name: "qobuz",
-        link: "https://www.qobuz.com/us-en/search?q=Isolate%20Suburbia",
+        link: "https://www.qobuz.com/de-de/album/suburbia-isolate/knko4j3b4w75b",
       },
       {
         name: "youtube-music",
-        link: "https://music.youtube.com/playlist?list=OLAK5uy_kHSstHt5Je0Bpy-DBQ9Qf1jz9wJEB0IdY",
+        link: "https://music.youtube.com/watch?v=5jEwSkQ-iO0&si=fwMhQ8OMJrBUsGor",
       },
       {
         name: "youtube",
-        link: "https://www.youtube.com/results?search_query=Isolate%20Suburbia",
+        link: "https://youtu.be/5jEwSkQ-iO0?si=vT5VovHqlaKM9qJK",
+      },
+      {
+        name: "amazon",
+        link: "https://music.amazon.de/tracks/B0HPFJTPCV/?ref=dm_sh_YGLpKPTE900EmW2e9GqeKu7Ij"
       },
     ],
     buys: [
@@ -85,7 +87,7 @@ export const releases: ReleaseConf[] = [
       },
       {
         name: "itunes",
-        link: "https://music.apple.com/us/album/suburbia-single/6827464092?l=de&ls=1",
+        link: "https://music.apple.com/de/song/suburbia/6827464102",
       },
     ],
     colorStyle: {
